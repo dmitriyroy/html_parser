@@ -24,7 +24,6 @@ public class Main {
 //            e.printStackTrace();
 //        }
 
-
         HtmlGrabber htmlGrabber = new HtmlGrabber(outFile);
         htmlGrabber.grabSite("http://ita.biz.ua", "cp1251");
 
