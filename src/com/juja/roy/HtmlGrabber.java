@@ -52,6 +52,7 @@ public class HtmlGrabber {
             String inputLine;
             while ((inputLine = br.readLine()) != null) {
                 sb.append(inputLine);
+                sb.append("\n");
             }
         } finally {
             br.close();

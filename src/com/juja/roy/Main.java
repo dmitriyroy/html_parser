@@ -14,7 +14,12 @@ import java.util.Date;
 public class Main {
     public static BufferedWriter logFileWriter;
     public static void main(String[] args) throws IOException {
-        String outFilePath = "/home/dmitriyroy/Data/HtmlFile.txt";
+//        String url = "http://ita.biz.ua";
+        String url = "http://konditer.dp.ua";
+        String siteCode = "cp1251";
+//        String outFilePath = "/home/dmitriyroy/Data/HtmlFile.txt";
+        String outFilePath = "d:/!!!_0/HtmlFile_" + url.replace(":","").replace("/","").replace("https","").replace("http","") + ".txt";
+        
         File outFile = new File(outFilePath);
         // открываем лог-файл. дописываем в конец - параметр true
 //        try {
@@ -27,7 +32,7 @@ public class Main {
 //        }
 
         HtmlGrabber htmlGrabber = new HtmlGrabber(outFile);
-        htmlGrabber.grabSite("http://ita.biz.ua", "cp1251");
+        htmlGrabber.grabSite(url, siteCode);
 
     }
 }
