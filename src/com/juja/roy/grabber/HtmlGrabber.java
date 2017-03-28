@@ -1,4 +1,4 @@
-package com.juja.roy;
+package com.juja.roy.grabber;
 
 import java.io.*;
 import java.net.MalformedURLException;
